@@ -1,0 +1,38 @@
+.story {
+  background-color: $main-background-color;
+
+  &__wrapper{
+      padding: 44px 0;
+  }
+
+  h2{
+    margin-top: 17px;
+    margin-bottom: 35px;
+  }
+
+  &__body{
+    gap: 70px;
+    margin-bottom: 104px;
+  }
+
+  &__description,
+  &__image {
+    width: 50%;
+  }
+
+  &__description{
+    margin-top: 143px;
+    p{
+      width: 434px; //390
+      line-height: 29px;
+    }
+  }
+
+  &__image{
+    img{
+      border-radius: 229px 229px 0 0;
+      max-width: 477px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.location {
+
+  @include laptop() {
+    &__content {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      &-item {
+        width: 100%;
+      }
+
+      &-text {
+
+        &-address {
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  @include mobile() {
+    h2{
+      font-size: $font-size_xl;
+      text-align: center;
+    }
+
+    &__description {
+      p {
+        font-size: $font-size_2xs;
+      }
+    }
+  }
+}

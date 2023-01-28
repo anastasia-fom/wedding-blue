@@ -1,0 +1,17 @@
+.rsvp {
+  @include tablet() {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  @include mobile() {
+    h2 {
+      font-size: $font-size_xl;
+    }
+
+    &__btn {
+      padding: 19px 127px;
+    }
+  }
+}

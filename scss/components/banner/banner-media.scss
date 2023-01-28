@@ -1,0 +1,22 @@
+.banner {
+  @include tablet() {
+
+    &__wrapper {
+      padding: 319px 15px 363px 15px;
+    }
+
+    p {
+      font-size: $font-size_lg;
+    }
+
+    h1 {
+      font-size: $font-size_md;
+    }
+  }
+
+  @include mobile() {
+    h1 {
+      font-size: 37px;
+    }
+  }
+}

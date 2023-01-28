@@ -1,0 +1,41 @@
+.party {
+  background-color: $light-background-color;
+  padding: 55px 0;
+
+  h2{
+    margin-top: -120px;
+  }
+
+  h3{
+    margin-top: 24px;
+    margin-bottom: 21px;
+  }
+
+  h5 {
+    font-size: $font-size_3xs;
+  }
+
+  &__bridesmaids,
+  &__groomsmen {
+    gap: 30px;
+
+    &-item{
+      background-color: $main-background-color;
+      padding: 30px 26px 45px 26px;
+      gap: 10px;
+
+      .image {
+        background: var(--bg) center / cover;
+        width: 162px;
+        height: 162px;
+        border-radius: 100%;
+      }
+
+      p{
+        width: 189px;
+        text-align: center;
+        font-size: $font-size_xs;
+      }
+    }
+  }
+}

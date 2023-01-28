@@ -1,0 +1,39 @@
+.gallery {
+  @include desktop() {
+    h2 {
+      margin-bottom: 46px;
+    }
+
+    &__content {
+      flex-direction: column;
+
+    }
+
+    &__items {
+      padding-left: 0;
+
+      &-pictures {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  @include laptop() {
+    &__wrapper {
+      padding-bottom: 40px;
+    }
+
+    &__items {
+
+      &-pictures {
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

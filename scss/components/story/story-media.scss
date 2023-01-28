@@ -1,0 +1,41 @@
+.story {
+  @include desktop() {
+    &__description{
+      p{
+        width: 390px;
+      }
+    }
+  }
+
+  @include laptop() {
+    &__body{
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 64px;
+    }
+
+    &__description,
+    &__image {
+      width: 100%;
+    }
+
+    &__description{
+      margin-top: 0;
+      p{
+        width: initial;
+      }
+    }
+  }
+
+  @include mobile() {
+    h2{
+      font-size: $font-size_xl;
+    }
+
+    &__description {
+      p {
+        font-size: $font-size_2xs;
+      }
+    }
+  }
+}

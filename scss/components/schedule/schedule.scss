@@ -1,0 +1,36 @@
+.schedule {
+  background-color: #EFEEEC;
+  font-size: $font-size_base;
+
+  &__wrapper {
+    padding: 72px 43px 82px 43px;
+  }
+
+  h3 {
+    margin-bottom: 50px;
+  }
+
+  &__time {
+
+    .line {
+      height: 410px;
+    }
+
+    &-left {
+      text-align: right;
+      border-right: 1px solid $main-color;
+      padding-right: 21px;
+    }
+
+    &-right {
+      text-align: left;
+      margin-left: 22px;
+    }
+
+    &-left p,
+    &-right p {
+      margin-bottom: 62px;
+    }
+  }
+
+}

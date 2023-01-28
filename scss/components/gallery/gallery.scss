@@ -1,0 +1,40 @@
+.gallery {
+  background-color: $main-background-color;
+
+  &__wrapper {
+    padding: 63px 47px 107px 47px;
+  }
+
+  &__items {
+    padding-left: 80px;
+
+    &-pictures {
+      gap: 30px;
+
+      a {
+
+        .image {
+          background: var(--bg) center / cover;
+          border-radius: 6px;
+          width: 263px;
+          height: 263px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    @extend %katoria-script-regular;
+    font-size: $font-size_base;
+    text-decoration: none;
+    color: $main-color;
+    margin-top: 67px;
+
+    &:hover {
+      color: $main-color;
+      img {
+        width: 116px;
+      }
+    }
+  }
+}

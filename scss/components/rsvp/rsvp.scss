@@ -1,0 +1,25 @@
+.rsvp {
+  background-color: $light-background-color;
+
+  &__wrapper {
+    padding: 63px  40px 71px 40px;
+  }
+
+  h2 {
+    margin-top: 26px;
+    margin-bottom: 23px;
+  }
+
+  &__btn {
+    background-color: $main-color;
+    color: #FFFFFF;
+    @extend %playfair-display-regular;
+    padding: 19px 198px;
+    border: none;
+
+    &:hover {
+      color: $second-background-color;
+      background-color: $rsvp-btn-color-hover;
+    }
+  }
+}

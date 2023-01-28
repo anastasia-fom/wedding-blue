@@ -1,0 +1,100 @@
+.modal {
+
+    &-dialog{
+      max-width: 390px;
+      width: 100%;
+      filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
+    }
+
+    &-content {
+      border: none;
+      padding: 22px 40px 83px 41px;
+      border-radius: 0;
+
+      h3 {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      form {
+        margin-top: 44px;
+        font-size: $font-size_2xs;
+        gap: 17px;
+
+        label{
+          margin-bottom: 9px;
+          padding: 0;
+        }
+
+        .form-control,
+        .form-select {
+          border-radius: 0;
+          height: 53px;
+          border: 1px solid #C4C4C4;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+
+        #textarea {
+        height: 208px;
+      }
+      }
+    }
+
+  &__questions {
+
+    p{
+      margin-bottom: 14px;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .label-radio:before {
+      content: url('../../../assets/icons/radio.svg');
+      padding-right: 11px;
+    }
+
+    input[type="radio"]:checked + .label-radio:before {
+      content: url('../../../assets/icons/radio-checked.svg');
+    }
+  }
+
+  .form-select{
+    background-image: url('../../../assets/icons/arrow-down.svg');
+  }
+
+  &__numbers{
+    p {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__btn{
+    @extend %playfair-display-regular;
+    padding: 19px 113px;
+    border: none;
+    border-radius: 0;
+    background-color: $send-btn-color;
+    color: #FFFFFF;
+    font-size: $font-size_sm;
+    text-transform: uppercase;
+    max-width: 309px;
+    width: 100%;
+    margin-top: 78px;
+    &:hover {
+      color: #FFFFFF;
+      background-color: $send-btn-color-hover;
+    }
+  }
+
+  &-backdrop {
+    background: #fff;
+  }
+
+  &-backdrop.show {
+    opacity: .8;
+  }
+}

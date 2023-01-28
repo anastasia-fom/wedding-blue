@@ -1,0 +1,41 @@
+.party {
+  @include laptop() {
+    &__bridesmaids, &__groomsmen {
+      overflow-x: scroll;
+      width: 100%;
+      justify-content: flex-start !important;
+    }
+
+    &__bridesmaids {
+      margin-bottom: 63px;
+    }
+  }
+
+  @include tablet() {
+    h2 {
+      font-size: $font-size_xl;
+      text-align: center;
+      margin-bottom: 84px;
+    }
+
+    h3 {
+      font-size: $font-size_md;
+    }
+
+    h4 {
+      font-size: $font-size_md;
+    }
+
+    p {
+      font-size: $font-size_2xs;
+    }
+  }
+
+  @include mobile() {
+    h2 {
+      margin-top: -100px;
+    }
+  }
+
+
+}

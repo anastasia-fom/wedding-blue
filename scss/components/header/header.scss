@@ -1,0 +1,24 @@
+.header {
+
+  background-color: $main-background-color;
+
+  &__wrapper {
+    padding: 21px 0;
+  }
+
+  #burger-menu, label{
+    display: none;
+  }
+
+  &__navbar {
+    ul {
+      gap: 110px;
+    }
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+}

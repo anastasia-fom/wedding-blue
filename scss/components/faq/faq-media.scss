@@ -1,0 +1,38 @@
+.faq {
+
+  @include mobile() {
+    background-image: none;
+    background-color: $main-background-color;
+
+    &__wrapper {
+      padding: 51px 32px 32px 32px;
+    }
+
+    .accordion {
+      &-item {
+        border-bottom: 1px solid $accordion-border;
+      }
+
+      &-button {
+        font-family: 'Playfair Display Medium', sans-serif;
+        font-size: $font-size_2xs;
+
+          &:not(.collapsed) {
+            font-size: $font-size_2xs;
+
+            &::after{
+              background-image: url("../../../assets/icons/close-media.svg");
+            }
+          }
+
+          &::after {
+            background-image: url("../../../assets/icons/open-media.svg");
+          }
+        }
+
+      &-body {
+        font-size: $font-size_2xs;
+      }
+    }
+  }
+}

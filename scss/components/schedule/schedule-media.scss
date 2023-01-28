@@ -1,0 +1,39 @@
+.schedule {
+  @include tablet() {
+    &__time {
+      flex-direction: column;
+      align-items: flex-start !important;
+
+      .line {
+        border: none;
+        display: none;
+      }
+
+      &-left {
+        text-align: left;
+        border-right: none;
+        padding-right: 0;
+      }
+
+      &-right {
+        margin-left: 0;
+      }
+
+      &-left,
+      &-right {
+        border-left: 1px solid $main-color;
+      }
+
+      &-left p,
+      &-right p {
+        margin-left: 38px;
+        margin-bottom: 28px;
+      }
+
+      &-left:last-child,
+      &-right:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

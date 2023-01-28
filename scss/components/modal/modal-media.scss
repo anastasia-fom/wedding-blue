@@ -1,0 +1,12 @@
+.modal {
+  @include tablet() {
+    &-dialog {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__btn {
+      padding: 19px 0;
+    }
+  }
+}

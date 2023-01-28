@@ -1,0 +1,51 @@
+.faq {
+  background-image: url("../../../assets/img/faq-background.png");
+  background-size: cover;
+  background-position: center;
+
+  &__wrapper {
+    padding: 137px 32px 117px 32px;
+  }
+
+  .accordion {
+    max-width: 899px;
+    width: 100%;
+
+    &-item {
+      background-color: transparent;
+      border-bottom: 1px solid $main-color;
+      padding: 19px 0 19px 19px;
+    }
+
+    &-button {
+      color: $main-color;
+      font-size: $font-size_base;
+      background-color: transparent;
+      @extend %katoria-script-regular;
+
+      &:not(.collapsed) {
+        border: none;
+        box-shadow: none;
+
+        &::after{
+          background-image: url("../../../assets/icons/close.svg");
+        }
+      }
+
+      &::after {
+        background-image: url("../../../assets/icons/open.svg");
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &-body {
+      @extend %playfair-display-regular;
+      color: $main-color;
+      font-size: $font-size_2xs;
+      padding: 8px 88px 19px 19px;
+    }
+  }
+}
